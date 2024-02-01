@@ -6,7 +6,7 @@ import json
 
 # Initialize the client
 KEY_FILE_LOCATION = 'key.json'
-#PROPERTY_ID = '403422402'
+
 credentials = service_account.Credentials.from_service_account_file(KEY_FILE_LOCATION)
 client = BetaAnalyticsDataClient(credentials=credentials)
 def fetch_ga4_data_batch(property_id, metrics, dimensions):
